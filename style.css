@@ -1,0 +1,79 @@
+h1 {
+    color:purple;
+    text-align:center;
+    text-transform: capitalize;
+    text-decoration: underline;
+    font-size: 40px;
+}
+p {
+    border: 1px solid black;
+    background-color: rgb(165, 156, 156);
+    width: 80%;
+    height: 150px;
+    margin-right: auto;
+    margin-left: auto;
+    font-family: Helvetica;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+}
+.row .subdiv p #span1:nth-child(1) {
+    background-color:rgb(238, 158, 171);
+    color:black;
+}
+.row .subdiv p #span2:nth-child(1) {
+    background-color:rgb(236, 86, 86);
+    color:white;
+}
+.row .subdiv p #span3:nth-child(1) {
+    background-color:rgba(255, 230, 0, 0.42);
+    color:black;
+}
+
+
+.row {
+    width: 100%;
+    overflow: hidden; 
+}
+
+.row .subdiv p span {
+    width: 30%;
+    float: right;
+    padding: 10px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.row .subdiv {
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+    padding: 5px; 
+}
+
+/* for desktop devices  */
+@media (min-width: 992px) {
+    .row .subdiv {
+        width: 33.33%; 
+    }
+}
+
+/* for table devices  */
+@media (min-width: 768px) and (max-width: 991px) {
+    .row {
+  
+    }
+    .row .subdiv {
+        width: 50%; 
+    }
+    .row .subdiv:nth-child(3){
+        width: 100%;
+    }
+}
+
+/* for moble devices  */
+@media (max-width: 767px) {
+    .row .subdiv {
+        width: 100%;
+    }
+}
